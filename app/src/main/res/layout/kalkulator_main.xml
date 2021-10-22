@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/green"
+        android:padding="5dp"
+        android:text="Muhammad Habibi Febriyon Qodri"
+        android:textColor="@color/white"
+        android:textSize="21sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Masukkan Dua Angka"
+        android:textAlignment="center"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/txtAngkaPertama"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Masukka angka pertama"
+        android:textSize="14sp"
+
+        />
+
+    <EditText
+        android:id="@+id/txtAngkaKedua"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Masukka angka Kedua"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="20dp"
+            android:id="@+id/tambah"
+            android:onClick="methodPenjumlahan"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="20sp"
+            android:id="@+id/kuurang"
+            android:onClick="methodePengurangan"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:text="x"
+            android:textSize="17dp"
+            android:id="@+id/kali"
+            android:layout_weight="1"
+            android:onClick="methodPerkalian"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="/"
+            android:textSize="20dp"
+            android:id="@+id/bagi"
+            android:onClick="methodPembagian"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Bersihkan"
+        android:textSize="18dp"
+        android:id="@+id/bersihkan"
+        android:onClick="clear"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="HASIL"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="0"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:id="@+id/txt_hasil"
+        />
+
+</LinearLayout>
+
+
+
